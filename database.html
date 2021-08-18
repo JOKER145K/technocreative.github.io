@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+<style type="text/css">
+
+
+
+.container {
+
+
+     height:200px;
+     width:95vw;
+     border:1px solid;
+
+}
+
+.container div{
+
+
+     height:100%;
+     width:48.8%;
+     border:1px solid;
+     display:inline-table;
+
+
+}
+
+.container div div{
+
+
+     height:50%;
+     width:100%;
+     border:1px solid;
+
+
+}
+
+#text_traffic {
+
+
+     position:absolute;
+     top:20px;
+     left:50px;
+
+
+}
+
+#traffic_count  {
+
+
+     position:absolute;
+     top:120px;
+     left:80px;
+
+
+}
+
+#text_visitors {
+
+
+     position:absolute;
+     top:20px;
+     left:220px;
+
+
+}
+
+#visitors_count {
+
+
+     position:absolute;
+     top:120px;
+     left:260px;
+
+
+}
+
+.console {
+
+
+      width:95vw;
+      height:60%;
+      border:1px solid;
+
+}
+
+.dashboard {
+
+
+      height:auto;
+      width:95vw;
+      border:1px solid;
+      
+
+
+}
+
+.dashboard .ip {
+
+     height:30px;
+     width:49.4%;
+     border:1px solid;
+     float:left;
+
+}
+
+.dashboard .request {
+
+     height:30px;
+     width:49.4%;
+     border:1px solid;
+     float:right;
+
+}
+
+.dashboard .ip p {
+
+
+     text-align:center;
+
+
+}
+
+.dashboard .request p {
+
+
+     text-align:center;
+
+
+}
+
+#clear {
+
+
+     border-radius:30%;
+     background-color:transparent;
+     border-color:#389fd6;
+     color:#389fd6;
+     position:absolute;
+     right:5px;
+
+
+}
+
+#clear:hover {
+
+
+      animation-name:clearbtn;
+      animation-duration:2s;
+      content:'C';
+
+
+}
+
+@keyframes clearbtn {
+
+       from{
+       
+       
+            border-radius:30%;
+            
+            
+       
+       
+       }
+       to{
+       
+       
+           border-radius:50%;
+       
+       
+       }
+
+}
+
+
+</style>
+
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+
+
+<div class="container" >
+
+
+<div><div></div></div>
+<div><div></div></div>
+
+
+</div>
+
+<br>
+<div class="dashboard" >
+
+<div class="ip" ><p id="ip" ></p></div>
+<div class="request" ><p id="req" ></p></div>
+<center><p>technocreative</p></center>
+
+</div>
+
+<br>
+<div class="console" scrolling="yes" id="console" ></div>
+
+<div>
+
+<h2 id="text_traffic" >Traffic</h2>
+<h2 id="traffic_count" >0</h2>
+
+<h2 id="text_visitors" >Visitors</h2>
+<h2 id="visitors_count" >0</h2>
+
+</div>
+
+<br>
+<button id="clear" onclick="clear()">Clear</button>
+
+</body>
+
+
+</html>
